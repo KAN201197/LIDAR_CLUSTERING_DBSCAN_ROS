@@ -32,7 +32,7 @@ This package subscribes to a point cloud topic, applies a pass-through filter to
    - Add the cluster_markers topic to visualize the bounding boxes of the clusters.
 
 ## Parameters
-The node has several parameters that can be adjusted to fit specific use cases:
+The node has several parameters that can be adjusted in config.yaml file inside param folder to fit specific use cases:
 
 - **ground_min_z** (double, default: -2.0): Minimum Z value for pass-through filter.
 - **ground_max_z** (double, default: 3.0): Maximum Z value for pass-through filter.
