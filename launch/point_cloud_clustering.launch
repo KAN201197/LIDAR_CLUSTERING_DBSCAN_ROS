@@ -1,0 +1,16 @@
+<launch>
+    
+    <!-- Static transform publisher for lidar_top to base_link -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="lidar_top_to_base_link" args="0 0 0 0 0 0 base_link lidar_top" />
+    
+    <!-- Point cloud clustering node -->
+    <node pkg="point_cloud_clustering" type="point_cloud_clustering" name="point_cloud_clustering" output="screen">
+          <rosparam command="load" file="$(find point_cloud_clustering)/param/config.yaml" />
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find point_cloud_clustering)/rviz/clustering.rviz" />
+    
+    <node pkg="rosbag" type="play" name="rosbag_play" args="--loop --rate 0.25 $(find point_cloud_clustering)/bags/me5413_lidar.bag" />
+    
+  </launch>
+  
