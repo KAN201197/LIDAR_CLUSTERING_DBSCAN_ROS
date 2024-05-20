@@ -1,0 +1,16 @@
+ground_min_z: -2.0
+ground_max_z: 4.0
+cluster_tolerance: 0.6
+min_cluster_size: 10
+max_cluster_size: 5000
+sac_max_iterations: 1000
+sac_distance_threshold: 0.3
+sor_mean_k: 50
+sor_stddev_mul_thresh: 1.0
+voxel_leaf_size: 0.15
+cropbox_min_x: -15.0
+cropbox_min_y: -15.0
+cropbox_min_z: -2.0
+cropbox_max_x: 15.0
+cropbox_max_y: 15.0
+cropbox_max_z: 5.0
