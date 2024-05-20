@@ -1,9 +1,0 @@
-ground_min_z: -2.0
-ground_max_z: 3.0
-cluster_tolerance: 0.3
-min_cluster_size: 1000
-max_cluster_size: 10000
-sac_max_iterations: 10000
-sac_distance_threshold: 0.1
-sor_mean_k: 50
-sor_stddev_mul_thresh: 1.0
