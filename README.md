@@ -1,6 +1,6 @@
 # Lidar Clustering with DBSCAN in ROS
 
-![2024-05-1820-28-18-ezgif com-resize(1)](https://github.com/KAN201197/LIDAR_CLUSTERING_DBSCAN_ROS/assets/128454220/72ceb00c-5470-4b85-8d08-60bfa7c5de71)
+![output](https://github.com/KAN201197/LIDAR_CLUSTERING_DBSCAN_ROS/assets/128454220/7936d70d-14eb-40da-a1cd-a46000f41665)
 
 This ROS package performs point cloud clustering using DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm. It segments the ground plane, removes outliers, and then clusters the remaining points. The results are visualized using RViz markers.
 
